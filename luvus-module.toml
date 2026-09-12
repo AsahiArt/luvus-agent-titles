@@ -1,5 +1,5 @@
-id = "asahiart.plaque"
-name = "Plaque"
+id = "asahiart.agent-titles"
+name = "Agent Titles"
 version = "0.1.0"
 min_luvus_version = "0.14.1"
 description = "Publish human titles onto resumable AGENTS sidebar rows."

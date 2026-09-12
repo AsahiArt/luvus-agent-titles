@@ -1,8 +1,8 @@
-# Plaque
+# Agent Titles
 
 A [Luvus](https://luvus.dev) module that publishes human titles onto **resumable** rows in the AGENTS sidebar.
 
-Luvus does not parse native agent session stores for that list. Plaque reads them instead and pushes titles with `luvus ui agent-title push`. Live OSC titles still win. Luvus pane aliases (`=name`) are never sent as titles.
+Luvus does not parse native agent session stores for that list. This module reads them instead and pushes titles with `luvus ui agent-title push`. Live OSC titles still win. Luvus pane aliases (`=name`) are never sent as titles.
 
 ## What it reads
 
@@ -21,7 +21,7 @@ Luvus does not parse native agent session stores for that list. Plaque reads the
 From GitHub:
 
 ```sh
-luvus module install AsahiArt/Plaque
+luvus module install AsahiArt/agent-titles
 ```
 
 Local checkout:
@@ -29,13 +29,13 @@ Local checkout:
 ```sh
 luvus module link .
 luvus module list
-luvus module log asahiart.plaque
+luvus module log asahiart.agent-titles
 ```
 
 Refresh on demand:
 
 ```sh
-luvus module run asahiart.plaque refresh
+luvus module run asahiart.agent-titles refresh
 ```
 
 Titles repaint on startup and when resume rows change (`pane.created` / `closed` / `forked`, `pane.agent_status_changed`, `workspace.created`). There is no polling.
@@ -43,4 +43,4 @@ Titles repaint on startup and when resume rows change (`pane.created` / `closed`
 ## Notes
 
 - Empty titles are not pushed. `ui agent-title clear` drops every title this module owns.
-- The CLI authenticates with the injected module token. Plaque does not pass, log, or persist it.
+- The CLI authenticates with the injected module token. This module does not pass, log, or persist it.
