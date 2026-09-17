@@ -21,7 +21,7 @@ Luvus does not parse native agent session stores for that list. This module read
 From GitHub:
 
 ```sh
-luvus module install AsahiArt/agent-titles
+luvus module install AsahiArt/luvus-agent-titles
 ```
 
 Local checkout:
